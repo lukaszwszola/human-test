@@ -1,0 +1,46 @@
+body {
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+   .header-container h2 {
+    font-size: 40px;
+	text-align: center;
+    background-color: #e0e0e0;
+	opacity: 0.2;
+    padding: 5px;
+    color: #000000;
+    margin: 10px;
+}
+
+.body-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button {
+	opacity: 0.5;
+	border: none;
+	width: 123px;
+	padding: 10px;
+}
+
+canvas {
+	opacity: 0.2;
+}
+
+.prediction-text {
+	font-size: 20px;
+	text-align: center;
+    background-color: #e0e0e0;
+	opacity: 0.4;
+    padding: 5px;
+    color: #000000;
+    margin: 10px;
+	position: absolute;
+	bottom: 0;
+}
+
