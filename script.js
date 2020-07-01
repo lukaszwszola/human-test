@@ -1,5 +1,6 @@
 let model;
 
+var verNum					= 3;
 var canvasWidth           	= 250;
 var canvasHeight 			= 250;
 var canvasStrokeStyle		= "#002171";
@@ -201,6 +202,14 @@ function displayLabel(data) {
             max = data[i];
         }
     }
-	$(".prediction-text").html("Liczba to: <b>"+maxIndex+"</b> z <b>"+( max*100 ).toFixed(2)+"%</b> pewności")
+	$(".prediction-text").html("Liczba to: <b>"+maxIndex+"</b> z <b>"+( max*100 ).toFixed(2)+"%</b> pewności");
+	
+	if (maxIndex == verNum) {
+		setTimeout("location.href = 'success.html';",1000);
+	} else {
+		setTimeout("location.href = 'fail.html';",1000);
+	}
+	
+	
 }
 
